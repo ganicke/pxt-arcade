@@ -9,6 +9,7 @@
     },
     "galleries": {
         "Tutorials": "tutorials",
+        "Python Tutorials": "python-tutorials",
         "Blocks Games": "blocks-games",
         "JavaScript Games": "javascript-games",
         "Game Design Concepts": "concepts",

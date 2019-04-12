@@ -9,6 +9,10 @@
         "largeImageUrl": "/static/tutorials/chase-the-pizza.gif"
     },
     {
+        "name": "Python Tutorials",
+        "url": "/python-tutorials"
+    },
+    {
         "name": "Blocks Games",
         "url": "/blocks-games",
         "imageUrl": "/static/examples/duck.png",
@@ -48,6 +52,7 @@
 ## See Also
 
 [Tutorials](/tutorials),
+[Python Tutorials](/python-tutorials),
 [Blocks Games](/blocks-games),
 [JavaScript Games](/javascript-games),
 [Game Design Concepts](/concepts),
