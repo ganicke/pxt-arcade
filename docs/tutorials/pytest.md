@@ -20,3 +20,38 @@ Find ``||scene:set background color to||`` in ``||scene:Scene||``. Drag it into 
 // @highlight
 scene.setBackgroundColor(7)
 ```
+
+## Step 2 @fullscreen
+
+Find ``||variables:set mySprite to||`` in ``||sprites:Sprites||``. Drag it into the ``||loops:on start||`` **after** ``||scene:set background color to||``.
+
+This will create a new character in the game -- but there is no image to represent this character yet.
+
+```spy
+enum SpriteKind {
+    Player,
+    Enemy,
+    Food
+}
+let mySprite: Sprite = null
+scene.setBackgroundColor(7)
+// @highlight
+mySprite = sprites.create(img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`, SpriteKind.Player)
+```
